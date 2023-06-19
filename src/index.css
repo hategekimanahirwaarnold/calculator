@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body, .App, .calculator {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(55, 164, 172);
+  flex-direction: column;
+}
+.App {
+  border: solid;
+  background-color: aqua;
+  width: 300px;
+  height: fit-content;
+  color: black;
+  flex-direction: column;
+  padding: 10px;
+}
+.calculator {
+  /* border: dashed black; */
+  width: 100%;
+  height: fit-content;
+  text-align: right;
+  font-size: 24px;
+}
+#display {
+  background-color: white;
+  width: 100%;
+  min-height: 60px;
+  word-break: break-all;
+  max-height: fit-content;
+  color: black;
+}
+#display p {
+  padding: 0;
+  margin: 0;
+}
+.answ {
+  color: rgb(55, 164, 172);
+}
+#operations {
+  width: 100%;
+  height: fit-content;
+}
+.row {
+  width: 100%;
+  height: 63px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.bigRow {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+.biggerRow {
+  display: flex;
+}
+button {
+  height: 100%;
+  width: 100px;
+  font-size: 18px;
+  outline: none;
+}
+#equals, #clear {
+  background-color: brown;
+  border: solid gray 1px;
+  width: 200px;
+}
+#equals {
+  background-color:  rgb(55, 164, 172);
+  width: 100px;
+  height: 125px;
+}
+#add, #subtract, #answer, #multiply, #divide {
+  background-color: rgb(225, 228, 231);
+  border: solid gray 1px;
+}
+#subtract,#decimal {
+  font-size: 20px;
+}
+button:hover, #add:hover, #subtract:hover, #answer:hover, #multiply:hover, #divide:hover, #equals:hover, #clear:hover {
+  border: solid black 2px;
+  font-size: 20px;
+}
+
+
+
